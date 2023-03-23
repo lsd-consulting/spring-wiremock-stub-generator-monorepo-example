@@ -1,0 +1,16 @@
+dependencies {
+    implementation project(':javaServiceApi')
+
+    implementation 'io.github.lsd-consulting:spring-wiremock-stub-generator:2.0.3'
+    annotationProcessor 'io.github.lsd-consulting:spring-wiremock-stub-generator:2.0.3'
+    compileOnly 'com.github.tomakehurst:wiremock:2.27.2'
+
+    // spring
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    annotationProcessor 'org.projectlombok:lombok:1.18.26'
+    implementation 'org.apache.commons:commons-lang3:3.11'
+}

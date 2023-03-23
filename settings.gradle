@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'spring-wiremock-stub-generator-monorepo-example'
+
+include 'javaServiceApi'
+include 'javaService'
+include 'kotlinServiceApi'
+include 'kotlinService'
+include 'clientServiceApi'
+include 'clientService'

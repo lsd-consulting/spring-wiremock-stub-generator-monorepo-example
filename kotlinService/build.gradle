@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'kotlin'
+}
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'org.springframework.boot'
+
+apply from: 'dependencies.gradle'
+
+compileKotlin.kotlinOptions.jvmTarget = "17"
